@@ -128,10 +128,10 @@ Quantova supports flexible on-chain governance and forkless upgrades, allowing s
 ## Diagrams
 
 ### **1. Validator Flow & Selection Process**
-(https://github.com/Quantova/consensus-specs/blob/features/docs/validator-selection.jpg)
+(https://github.com/Quantova/consensus-specs/blob/main/validator-selection.jpg)
 
 ### **2. Slashing Logic**
-(https://github.com/Quantova/consensus-specs/blob/features/docs/stashing-diagram.jpg)
+(https://github.com/Quantova/consensus-specs/blob/main/stashing-diagram.jpg)
 
 ---
 

@@ -1,4 +1,4 @@
-# Quantova Blockchain: Consensus Report
+# Quantova Blockchain: Consensus mechanism
 
 ## Overview
 

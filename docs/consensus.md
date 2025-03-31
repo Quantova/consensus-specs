@@ -69,8 +69,8 @@ Quantova leverages **Pure Proof of Stake (PPoS)**, ensuring secure and efficient
 
 ### Validator Flow & Selection Process
 
-![Validator Selection Process](https://github.com/Quantova/consensus-specs/blob/main/validator-selection.jpg)
+![Validator Selection Process](https://github.com/Quantova/consensus-specs/blob/main/images/validator-selection.jpg)
 
 ### Slashing Logic
 
-![Slashing Diagram](https://github.com/Quantova/consensus-specs/blob/main/stashing-diagram.jpg)
+![Slashing Diagram](https://github.com/Quantova/consensus-specs/blob/main/images/stashing-diagram.jpg)

@@ -21,7 +21,7 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 |------------------------|----------------------------------|
 | **Network Name**       | Quantova Network                 |
 | **RPC URL**            | https://rpc.quantova.org         |
-| **Chain ID**           | QTOV20                           |
+| **Chain ID**           | 42                           |
 | **Symbol**             | QTOV                             |
 | **Block Explorer URL** | [QuantovaScan.io](https://quantovasc.io) |
 | **Website**            | [Quantova.org](https://quantova.org) |

@@ -4,7 +4,9 @@
 ## Overview
 
 Quantova is a high-performance Layer 1 blockchain built on the Substrate framework, utilizing a **Pure Proof of Stake (PPoS)** consensus model. Designed for scalability, security, and decentralization, Quantova ensures fast transaction finality and seamless integration with existing blockchain ecosystems.
-[overview][https://github.com/Quantova/consensus-specs/blob/main/images/layer_flow.jpg]
+
+
+<img src="/images/layer_flow.jpg" alt="overview" width="300">
 
 ### Key Features
 

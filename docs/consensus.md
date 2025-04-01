@@ -1,20 +1,18 @@
 # Consensus Mechanism
 
 Quantova leverages **Pure Proof of Stake (PPoS)**, ensuring secure and efficient block finalization.
-<p align="left">
-  <img src="../images/workflow.jpg" alt="workflow" width="400">
-</p>
+<img src="../images/workflow.jpg" alt="workflow" width="400">
 
 ## Finality and Block Time
 
 - Block production occurs every **3 seconds**
   <p align="left">
-    <img src="../images/block_production.jpg" alt="block production" width="400">
+    <img src="../images/block_production.jpg" alt="block production" width="600">
   </p>
 - Finalization depends on network conditions but is typically achieved within seconds, ensuring rapid settlement
 - GRANDPA consensus provides deterministic finality
   <p align="left">
-    <img src="../images/finality_workflow.jpg" alt="finality" width="400">
+    <img src="../images/finality_workflow.jpg" alt="finality" width="600">
   </p> 
   
 

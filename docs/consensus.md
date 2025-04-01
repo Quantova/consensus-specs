@@ -1,7 +1,8 @@
 # Consensus Mechanism
 
 Quantova leverages **Pure Proof of Stake (PPoS)**, ensuring secure and efficient block finalization.
-<img src="../images/workflow.jpg" alt="workflow" width="400">
+
+<img src="../images/workflow.jpg" alt="workflow" width="500">
 
 ## Finality and Block Time
 

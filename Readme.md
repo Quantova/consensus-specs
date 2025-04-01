@@ -41,6 +41,7 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 - [Quantova Explorer](https://qtovascan.io/)
 - [Quantova GitHub](https://github.com/Quantova)
 - [Quantova Documentation](https://docs.quantova.org/)
+- [Consensus Specifications (PDF)](https://github.com/Quantova/consensus-specs/blob/main/docs/Consensus-Mechanism-Report.pdf)
 
 ## Quick Start
 

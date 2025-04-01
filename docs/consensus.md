@@ -2,15 +2,16 @@
 
 Quantova leverages **Pure Proof of Stake (PPoS)**, ensuring secure and efficient block finalization.
 
-[consensus_workflow][https://github.com/Quantova/consensus-specs/blob/main/images/workflow.jpg]
+<img src="../images/workflow.jpg" alt="workflow" width="600">
 
 ## Finality and Block Time
 
 - Block production occurs every **3 seconds**
-  [block_production][https://github.com/Quantova/consensus-specs/blob/main/images/block_production.jpg]
+  <img src="../images/block_production.jpg" alt="block production" width="600">
 - Finalization depends on network conditions but is typically achieved within seconds, ensuring rapid settlement
 - GRANDPA consensus provides deterministic finality
-  [finality][https://github.com/Quantova/consensus-specs/blob/main/images/finality_workflow.jpg]
+  <img src="../images/finality_workflow.jpg" alt="finality" width="600">
+  
 
 ## Validator Selection & Staking
 
@@ -68,9 +69,8 @@ Quantova leverages **Pure Proof of Stake (PPoS)**, ensuring secure and efficient
 ## Diagrams
 
 ### Validator Flow & Selection Process
+<img src="../images/validator-selection.jpg" alt="validator selection" width="800">
 
-![Validator Selection Process](https://github.com/Quantova/consensus-specs/blob/main/images/validator-selection.jpg)
 
 ### Slashing Logic
-
-![Slashing Diagram](https://github.com/Quantova/consensus-specs/blob/main/images/stashing-diagram.jpg)
+<img src="../images/stashing-diagram.jpg" alt="validator selection" width="800">

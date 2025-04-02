@@ -1,10 +1,10 @@
 # Quantova Blockchain
 
-
 ## Overview
 
 Quantova is a high-performance Layer 1 blockchain built on the Substrate framework, utilizing a **Pure Proof of Stake (PPoS)** consensus model. Designed for scalability, security, and decentralization, Quantova ensures fast transaction finality and seamless integration with existing blockchain ecosystems.
 
+To future-proof security against quantum computing threats, Quantova integrates **post-quantum cryptographic mechanisms**, making it one of the first Substrate-based blockchains to adopt quantum-resistant encryption methods. The network leverages **lattice-based cryptography**, including **Kyber** for key exchange and **Dilithium** for digital signatures, ensuring long-term resilience against quantum attacks. Additionally, Quantova employs the **SHA-3 hashing algorithm**, a NIST-standardized cryptographic hash function, to provide enhanced security for transaction integrity and data authentication.
 
 <img src="/images/layer_flow.jpg" alt="overview" width="300">
 
@@ -15,9 +15,13 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 - **High Throughput** – Blocks are produced every 3 seconds for efficient transaction processing
 - **Decentralized Validator Set** – PPoS ensures fair selection, automatic rotation, and economic security mechanisms
 - **Robust Security** – Implements strict slashing conditions for malicious validators and enforces censorship resistance
-- **Cross-Chain Bridge** – Decentralized relayer that uses zero-knowledge proofs to verify Grandpa finality proofs, enabling secure communication between Quantova and Binance Smart Chain (BSC) networks.
+- **Cross-Chain Bridge** – Decentralized relayer that uses zero-knowledge proofs to verify GRANDPA finality proofs, enabling secure communication between Quantova and Binance Smart Chain (BSC) networks.
 - **Governance & Address Blacklisting** – A voting system powered by QTOV token holders allows for the blacklisting of malicious addresses. Token holders can vote to blacklist addresses engaging in illicit activities, based on predefined parameters currently under discussion.
 - **No Forced Upgrades** – Quantova does not include the `sudo` pallet, meaning there are no privileged keys that allow forced upgrades to the Substrate framework. This ensures the chain remains immutable and truly decentralized.
+- **Post-Quantum Cryptographic Security** – Implements lattice-based cryptographic algorithms such as **Kyber** (for key exchange) and **Dilithium** (for digital signatures) to ensure resistance against quantum computing attacks. This enhances the longevity and security of transactions and data integrity on the network.
+- **SHA-3 Hashing Algorithm** – Uses **SHA-3** for cryptographic hashing, ensuring enhanced security against collision attacks and improving the integrity of stored blockchain data.
+- **Hybrid Encryption Model** – Combines traditional elliptic curve cryptography (ECC) with post-quantum algorithms to provide backward compatibility while transitioning towards quantum-resistant security.
+- **Secure Key Management** – Uses quantum-safe cryptographic primitives to enhance wallet security and prevent unauthorized access even in the presence of quantum adversaries.
 
 ## Network Information
 

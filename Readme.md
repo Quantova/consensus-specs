@@ -15,7 +15,7 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 - **High Throughput** – Blocks are produced every **3 seconds** for efficient transaction processing
 - **Decentralized Validator Set** – PPoS ensures fair selection, automatic rotation, and economic security mechanisms
 - **Robust Security** – Implements strict slashing conditions for malicious validators and enforces censorship resistance
-- **Cross-Chain Bridge** – Centralized relayer for seamless asset transfers between Quantova and Binance Smart Chain (BSC)
+- **Cross-Chain Bridge** – Decentralized relayer that uses zero-knowledge proofs to verify Grandpa finality proofs, enabling secure communication between Quantova and Binance Smart Chain (BSC) networks.
 
 ## Network Information
 
@@ -34,7 +34,7 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 - [Node Setup Guide](./docs/node-setup.md) - Instructions for running validator and full nodes
 - [Validator Guide](./docs/validator-guide.md) - Requirements and steps to become a validator
 - [Security Model](./docs/security-model.md) - Security assumptions and attack resistance
-- [BSC Bridge](./docs/bsc-bridge.md) - Documentation for the Centralized Bridge Relayer between Quantova and BSC
+- [BSC Bridge](./docs/decentralized-bridge.md) - Documentation for the Decentralized Bridge Relayer between Quantova and BSC
 
 ## Additional Resources
 

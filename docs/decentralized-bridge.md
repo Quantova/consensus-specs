@@ -73,6 +73,67 @@ This Substrate pallet implements a light client-based bridge mechanism for Binan
 - **Inward Transfers**: Events from BSC are verified using state proofs and processed on the Substrate chain.
 - **Outward Transfers**: Users can register outward transfers to BSC, which are tracked and executed by off-chain relayers.
 
+## BSC Finality Verification Flow
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  BSC Chain                                                                  │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐                     │
+│  │   Block N   │    │ Block N+1   │    │ Block N+2   │                     │
+│  │  (Current)  │    │ (Pending)   │    │ (Future)    │                     │
+│  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘                     │
+│         │                  │                   │                            │
+│         │                  │                   │                            │
+│         ▼                  ▼                   ▼                            │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐                     │
+│  │  Validator  │    │  Validator  │    │  Validator  │                     │
+│  │  Signatures │    │  Signatures │    │  Signatures │                     │
+│  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘                     │
+│         │                  │                   │                            │
+│         │                  │                   │                            │
+│         ▼                  ▼                   ▼                            │
+│  ┌─────────────────────────────────────────────────────────────────────────┐
+│  │                                                                         │
+│  │  Off-Chain Relayer                                                     │
+│  │  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │  │ 1. Collect BSC blocks and validator signatures                   │   │
+│  │  │ 2. Wait for sufficient confirmations                             │   │
+│  │  │ 3. Submit to Substrate chain via new_batch_of_bsc_blocks()      │   │
+│  │  └─────────────────────────────────────────────────────────────────┘   │
+│  │                                                                         │
+│  └─────────────────────────────────────────────────────────────────────────┘
+│                                                                             │
+│         │                                                                   │
+│         ▼                                                                   │
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  Substrate Chain                                                            │
+│  ┌─────────────────────────────────────────────────────────────────────────┐
+│  │                                                                         │
+│  │  BSC Bridge Pallet                                                     │
+│  │  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │  │ 1. Verify BSC headers using validator signatures                │   │
+│  │  │ 2. Update light client state                                     │   │
+│  │  │ 3. Process state proofs for transfers                           │   │
+│  │  └─────────────────────────────────────────────────────────────────┘   │
+│  │                                                                         │
+│  │  Storage:                                                              │
+│  │  - BscLightClientCurrentState (validators, contract)                   │
+│  │  - PendingBlocks (awaiting verification)                               │
+│  │  - InwardTransfers/OutwardTransfers (processed transfers)              │
+│  │                                                                         │
+│  └─────────────────────────────────────────────────────────────────────────┘
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Key Steps:
+1. BSC produces blocks with validator signatures
+2. Relayer collects blocks and waits for confirmations
+3. Relayer submits blocks to pallet via new_batch_of_bsc_blocks()
+4. Pallet verifies headers and updates light client state
+5. Once verified, transfers in the block are processed
+```
 
 ## Future Development
 - Expansion to support multiple bridge integrations, including Ethereum (ETH), Solana (SOL), and Tron (TRX).

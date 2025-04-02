@@ -12,10 +12,12 @@ Quantova is a high-performance Layer 1 blockchain built on the Substrate framewo
 
 - **EVM Compatibility** – Supports Ethereum-style signatures, allowing developers to use tools like MetaMask, Remix, Hardhat, and Web3.js
 - **Fast Finality** – Utilizes GRANDPA consensus for deterministic finality, ensuring finalized blocks cannot be reverted
-- **High Throughput** – Blocks are produced every **3 seconds** for efficient transaction processing
+- **High Throughput** – Blocks are produced every 3 seconds for efficient transaction processing
 - **Decentralized Validator Set** – PPoS ensures fair selection, automatic rotation, and economic security mechanisms
 - **Robust Security** – Implements strict slashing conditions for malicious validators and enforces censorship resistance
 - **Cross-Chain Bridge** – Decentralized relayer that uses zero-knowledge proofs to verify Grandpa finality proofs, enabling secure communication between Quantova and Binance Smart Chain (BSC) networks.
+- **Governance & Address Blacklisting** – A voting system powered by QTOV token holders allows for the blacklisting of malicious addresses. Token holders can vote to blacklist addresses engaging in illicit activities, based on predefined parameters currently under discussion.
+- **No Forced Upgrades** – Quantova does not include the `sudo` pallet, meaning there are no privileged keys that allow forced upgrades to the Substrate framework. This ensures the chain remains immutable and truly decentralized.
 
 ## Network Information
 
